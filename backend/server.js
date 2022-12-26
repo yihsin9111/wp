@@ -17,9 +17,9 @@ app.use(express.json());
 db.connect();
 
 app.use('/',routes);
-app.get('/', (req, res) => {
-    res.send('Hello, World!');
-});
+// app.get('/', (req, res) => {
+//     res.send('Hello, World!');
+// });
 
 if (process.env.NODE_ENV === "production") {
     const __dirname = path.resolve();
