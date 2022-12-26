@@ -1,8 +1,8 @@
 import express from 'express';
 import cors from 'cors';
 import path from 'path';
-import db from './db';
-import routes from './routes';
+import db from './src/db';
+import routes from './src/routes';
 
 const app = express();
 const port = process.env.PORT || 4000;
